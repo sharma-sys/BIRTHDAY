@@ -35,8 +35,15 @@ export default function Hero() {
         viewport={{ once: true }}
         className="max-w-4xl z-10"
       >
-        <motion.div variants={item} className="mb-6">
-          <span className="text-6xl md:text-7xl mb-4 block">🎉</span>
+        <motion.div variants={item} className="mb-6 flex flex-col items-center">
+          <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden mb-6 border-4 border-gold/30 shadow-[0_0_30px_rgba(255,209,102,0.3)]">
+            <img 
+              src="/sourav.jpg" 
+              alt="" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <span className="text-5xl md:text-6xl mb-4 block animate-bounce">🎉</span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
             Happy Birthday
           </h1>
